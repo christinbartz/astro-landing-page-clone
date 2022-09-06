@@ -1,11 +1,16 @@
 ---
 export interface Props {
+    targetUrl: string;
+    text: string;
 }
 
-const {} = Astro.props;
+const {
+    targetUrl,
+    text
+} = Astro.props as Props;
 ---
 
-<span>Button WIP</span>
+<a href={targetUrl}><button>{text}</button></a>
 
 <style>
 

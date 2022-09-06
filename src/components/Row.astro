@@ -1,12 +1,21 @@
 ---
-export interface Props {
-}
+import ItemToComponent from "../helpers/ItemToComponent.astro";
 
-const {} = Astro.props;
+const { content } = Astro.props;
 ---
 
-<span>Row WIP</span>
+<div class="row">
+    {
+        content.map((item) => (
+            <div class="column">
+                <ItemToComponent type={item.type} {...item} />
+            </div>
+        ))
+    }
+</div>
 
 <style>
-
+    .row {
+        display: flex;
+    }
 </style>

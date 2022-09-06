@@ -7,7 +7,6 @@ export const data = [
       {
         template: "Stage",
         title: "Build faster websites.",
-        image: 0,
         text: "Pull content from anywhere and serve it fast with Astro's next-gen island architecture.",
         children: [
           {
@@ -47,12 +46,12 @@ export const data = [
           },
           {
             template: "Headline",
+            level: 2,
             text: "Introducing: Astro Islands",
           },
           {
             template: "Text",
-            children:
-              " Astro Islands represent a leading paradigm shift for frontend web architecture. Astro extracts your UI into smaller, isolated components on the page. Unused JavaScript is replaced with lightweight HTML, guaranteeing faster loads and time-to-interactive (TTI).          ",
+            text: " Astro Islands represent a leading paradigm shift for frontend web architecture. Astro extracts your UI into smaller, isolated components on the page. Unused JavaScript is replaced with lightweight HTML, guaranteeing faster loads and time-to-interactive (TTI).          ",
           },
           {
             template: "Link",
@@ -90,12 +89,12 @@ export const data = [
     content: [
       {
         template: "Headline",
+        level: 2,
         text: "Themes",
       },
       {
         template: "Text",
-        children:
-          "Start your next Astro project with a real world theme built by our amazing community.",
+        text: "Start your next Astro project with a real world theme built by our amazing community.",
       },
     ],
   },
@@ -105,11 +104,12 @@ export const data = [
     content: [
       {
         template: "Headline",
+        level: 2,
         text: "The Astro Blog",
       },
       {
         template: "Text",
-        children: "Get all the latest news from the Astroverse.",
+        text: "Get all the latest news from the Astroverse.",
       },
     ],
   },
