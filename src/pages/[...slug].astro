@@ -1,0 +1,32 @@
+---
+// import * as data from "../../data.json";
+import {data} from "../../data.js";
+import Layout from "../layouts/Layout.astro";
+import ComponentArea from "../helpers/ComponentArea.astro"
+
+export async function getStaticPaths() {
+    const pages = data;
+
+    return pages.map(({slug, title, text, content}) => {
+        return {
+            params: {slug},
+            props: {title, text, content}
+        }
+    })
+}
+
+const { title, content } = Astro.props;
+---
+
+<Layout title={title}>
+	<main>
+		<ComponentArea content={content} />
+	</main>
+</Layout>
+
+<style>
+	main {
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+</style>
