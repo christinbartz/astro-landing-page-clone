@@ -1,0 +1,9 @@
+---
+import ItemToComponent from "./ItemToComponent.astro";
+
+const { content } = Astro.props;
+---
+
+<div>
+    {content.map((item) => <ItemToComponent template={item.template} {...item} />)}
+</div>
