@@ -1,84 +1,81 @@
-[
-  {
-    "path": "/",
-    "title": "Astro | Build faster websites",
-
-    "template": "HomePage",
-    "main": [
-      {
-        "template": "Stage",
-        "title": "Build faster websites.",
-        "image": "",
-        "text": "Pull content from anywhere and serve it fast with Astro's next-gen island architecture.",
-        "children": [
-          {
-            "template": "Row",
-            "content": [
-              {
-                "template": "Column",
-                "content": [
-                  {
-                    "template": "Button",
-                    "targetUrl": "https://docs.astro.build/en/getting-started/",
-                    "text": "Get Started"
-                  }
-                ]
-              },
-              {
-                "template": "Column",
-                "content": [
-                  {
-                    "template": "Code",
-                    "lang": "bash",
-                    "text": "npm create astro@latest"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "template": "Section",
-        "children": [
-          {
-            "template": "TitleIcon",
-            "type": "lightning",
-            "text": "Designed for speed"
-          },
-          { "template": "Headline", "text": "Introducing: Astro Islands" },
-          {
-            "template": "Text",
-            "children": " Astro Islands represent a leading paradigm shift for frontend web architecture. Astro extracts your UI into smaller, isolated components on the page. Unused JavaScript is replaced with lightweight HTML, guaranteeing faster loads and time-to-interactive (TTI).          "
-          },
-          {
-            "template": "Link",
-            "text": "Learn more about Astro Islands",
-            "targetUrl": "https://docs.astro.build/en/concepts/islands/"
-          },
-          {
-            "template": "CardList",
-            "columns": 3,
-            "content": [
-              {
-                "template": "Card",
-                "title": "Zero JavaScript Runtime",
-                "text": "Astro renders HTML on the server and strips away any remaining, unused JavaScript."
-              },
-              {
-                "template": "Card",
-                "title": "The Power of Islands",
-                "text": "Need interactive UI? Load individual, non-blocking component islands in parallel."
-              },
-              {
-                "template": "Card",
-                "title": "Lazy-Loading Islands",
-                "text": "Components only hydrate when they scroll into view. If you don't see it, Astro won't load it."
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-]
+{
+  "path": "/",
+  "title": "Astro | Build faster websites",
+  "template": "HomePage",
+  "content": [
+    {
+      "template": "Stage",
+      "title": "Build faster websites.",
+      "image": "",
+      "text": "Pull content from anywhere and serve it fast with Astro's next-gen island architecture.",
+      "children": [
+        {
+          "template": "Row",
+          "content": [
+            {
+              "template": "Column",
+              "content": [
+                {
+                  "template": "Button",
+                  "targetUrl": "https://docs.astro.build/en/getting-started/",
+                  "text": "Get Started"
+                }
+              ]
+            },
+            {
+              "template": "Column",
+              "content": [
+                {
+                  "template": "Code",
+                  "lang": "bash",
+                  "text": "npm create astro@latest"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "template": "Section",
+      "children": [
+        {
+          "template": "TitleIcon",
+          "type": "lightning",
+          "text": "Designed for speed"
+        },
+        { "template": "Headline", "text": "Introducing: Astro Islands" },
+        {
+          "template": "Text",
+          "children": " Astro Islands represent a leading paradigm shift for frontend web architecture. Astro extracts your UI into smaller, isolated components on the page. Unused JavaScript is replaced with lightweight HTML, guaranteeing faster loads and time-to-interactive (TTI).          "
+        },
+        {
+          "template": "Link",
+          "text": "Learn more about Astro Islands",
+          "targetUrl": "https://docs.astro.build/en/concepts/islands/"
+        },
+        {
+          "template": "CardList",
+          "columns": 3,
+          "content": [
+            {
+              "template": "Card",
+              "title": "Zero JavaScript Runtime",
+              "text": "Astro renders HTML on the server and strips away any remaining, unused JavaScript."
+            },
+            {
+              "template": "Card",
+              "title": "The Power of Islands",
+              "text": "Need interactive UI? Load individual, non-blocking component islands in parallel."
+            },
+            {
+              "template": "Card",
+              "title": "Lazy-Loading Islands",
+              "text": "Components only hydrate when they scroll into view. If you don't see it, Astro won't load it."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
