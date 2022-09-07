@@ -38,6 +38,7 @@ export const data = [
       },
       {
         template: "Section",
+        background: "canvas",
         children: [
           {
             template: "TitleIcon",
@@ -76,6 +77,88 @@ export const data = [
                 template: "Card",
                 title: "Lazy-Loading Islands",
                 text: "Components only hydrate when they scroll into view. If you don't see it, Astro won't load it.",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        template: "Section",
+        background: "light",
+        children: [
+          {
+            template: "TitleIcon",
+            type: "document",
+            text: "Designed for speed",
+          },
+          {
+            template: "Headline",
+            level: 2,
+            text: "Your content, your way.",
+          },
+          {
+            template: "Tabs",
+            content: [
+              {
+                title: "CMS",
+                children: [
+                  {
+                    template: "Headline",
+                    level: 3,
+                    text: "Using your CMS",
+                  },
+                  {
+                    template: "Text",
+                    text: "With top-level await, Astro makes it easy to fetch content from your CMS.",
+                  },
+                ],
+              },
+              {
+                title: "Markdown",
+                children: [
+                  {
+                    template: "Headline",
+                    level: 3,
+                    text: "Creating pages with Markdown",
+                  },
+                  {
+                    template: "Text",
+                    text: "Creating a page using Markdown is easy with Astro! Add a .md file to your pages directory and Astro will turn it into a page on your site. You can specify an Astro component in frontmatter to use as a page layout.",
+                  },
+                ],
+              },
+              {
+                title: "MDX",
+                children: [
+                  {
+                    template: "Headline",
+                    level: 3,
+                    text: "Creating pages with MDX",
+                  },
+                  {
+                    template: "Headline",
+                    level: 4,
+                    text: "Creating a page using MDX is _easy_ with Astro!",
+                  },
+                  {
+                    template: "Text",
+                    text: "Add a .mdx file to your pages directory and Astro will turn it into a page on your site. MDX files make it easy to mix components from any framework with your text content.",
+                  },
+                ],
+              },
+              {
+                title: "API",
+                children: [
+                  {
+                    template: "Headline",
+                    level: 3,
+                    text: "Using an API",
+                  },
+                  {
+                    template: "Text",
+                    text: "With native fetch built-in, Astro makes it easy to work with data from any API. Powered by https://owen-wilson-wow-api.herokuapp.com",
+                  },
+                ],
               },
             ],
           },
